@@ -9,7 +9,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+    <!--<link rel="stylesheet" href="assets/css/amazeui.min.css"/>-->
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/amazeui.flat.min.css">
 
@@ -53,6 +53,100 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        label, input, select {
+            vertical-align: middle;
+        }
+
+        .am-checkbox input[type=checkbox], .am-checkbox-inline input[type=checkbox], .am-radio input[type=radio], .am-radio-inline input[type=radio] {
+            /*float: left;*/
+            margin-left: -20px;
+            outline: 0;
+            clear: both;
+        }
+
+        input[type=checkbox], input[type=radio] {
+            margin: 0;
+            margin-top: 1px\9;
+            line-height: normal;
+        }
+
+        input.mui-checkbox {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            background-color: #FFFFFF;
+            border: solid 1px #d9d9d9;
+            background-clip: padding-box;
+            display: inline-block;
+            -webkit-appearance: none;
+        }
+
+        .mui-checkbox:focus {
+            outline: 0 none;
+            outline-offset: -2px;
+        }
+
+        .mui-checkbox:checked {
+            background-color: #BDC3D7;
+            border: solid 1px #FFFFFF;
+        }
+
+        .mui-checkbox:disabled {
+            background-color: #d9d9d9;
+            border: solid 1px #d9d9d9;
+        }
+
+        .mui-checkbox:disabled:before {
+            display: inline-block;
+            margin-top: 1px;
+            margin-left: 2px;
+            font-family: iconfont;
+            content: "\e667";
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+
+        .mui-checkbox.checkbox-green:checked {
+            background-color: #5cb85c;
+        }
+
+        .mui-checkbox.checkbox-orange:checked {
+            background-color: #f0ad4e;
+        }
+
+        .mui-checkbox.checkbox-s {
+            width: 19px;
+            height: 19px;
+        }
+
+        .mui-checkbox.checkbox-s:before {
+            display: inline-block;
+            margin-top: 1px;
+            margin-left: 2px;
+            font-family: iconfont;
+            content: "\e667";
+            color: #FFFFFF;
+            font-size: 13px;
+        }
+
+        .mui-checkbox-anim {
+            -webkit-transition: background-color ease 0.2s;
+            transition: background-color ease 0.2s;
+        }
+
+        .mui-checkbox-con {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .mui-checkbox-con label {
+            display: block;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -75,15 +169,19 @@
         <br>
 
         <form method="post" class="am-form">
-            <div class="am-g">
-                <div class="am-u-lg-12">
-                    <div class="am-input-group">
-                    </div>
+            <fieldset>
+
+                <div class="am-checkbox">
+                    <label style="font-size: 16px;">
+                        <input class="mui-checkbox" type="checkbox" checked> 知情同意
+                    </label>
                 </div>
-            </div>
+
+            </fieldset>
 
         </form>
         <hr>
+
     </div>
 </div>
 </body>
