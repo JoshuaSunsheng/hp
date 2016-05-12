@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login Page | Amaze UI Example</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+    <style>
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 200%;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        .header p {
+            font-size: 14px;
+        }
+
+        .am-u-lg-12 input.am-form-field {
+            background-color: #4CB0E6;
+            color: #BCE1F6;
+        }
+
+        html, body {
+            background-color: #EBEBEB;
+        }
+
+        .am-form input[type=number]::-webkit-input-placeholder, .am-form input[type=search]::-webkit-input-placeholder, .am-form input[type=text]::-webkit-input-placeholder, .am-form input[type=password]::-webkit-input-placeholder, .am-form input[type=datetime]::-webkit-input-placeholder, .am-form input[type=datetime-local]::-webkit-input-placeholder, .am-form input[type=date]::-webkit-input-placeholder, .am-form input[type=month]::-webkit-input-placeholder, .am-form input[type=time]::-webkit-input-placeholder, .am-form input[type=week]::-webkit-input-placeholder, .am-form input[type=email]::-webkit-input-placeholder, .am-form input[type=url]::-webkit-input-placeholder, .am-form input[type=tel]::-webkit-input-placeholder, .am-form input[type=color]::-webkit-input-placeholder, .am-form select::-webkit-input-placeholder, .am-form textarea::-webkit-input-placeholder, .am-form-field::-webkit-input-placeholder {
+            color: #BCE1F6;
+        }
+
+        .am-form input[type=number]:focus, .am-form input[type=search]:focus, .am-form input[type=text]:focus, .am-form input[type=password]:focus, .am-form input[type=datetime]:focus, .am-form input[type=datetime-local]:focus, .am-form input[type=date]:focus, .am-form input[type=month]:focus, .am-form input[type=time]:focus, .am-form input[type=week]:focus, .am-form input[type=email]:focus, .am-form input[type=url]:focus, .am-form input[type=tel]:focus, .am-form input[type=color]:focus, .am-form select:focus, .am-form textarea:focus, .am-form-field:focus {
+            background-color: #4CB0E6;
+            border-color: #3bb4f2;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, .3);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, .3)
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="am-g">
+        <h1>HP</h1>
+        <p>Integrated Development Environment<br/>代码编辑，代码生成，界面设计，调试，编译</p>
+    </div>
+    <hr/>
+</div>
+
+
+<div class="am-g">
+    <h5 style="  border-left: solid 5px #0D8083;padding-left: 1rem;color: #5f5f5f;">所在地以地区（市）、时间周期为每年的病例数计算，计算单药、多药耐药率、耐药趋势。</h5>
+    <div class="am-u-lg-12 am-u-md-12 am-u-sm-centered">
+        <div class="am-g">
+            <div class="am-u-lg-12">
+                <div class="am-input-group">
+                    <button type="button" class="am-btn am-btn-primary am-round" style="width: 150px;height: 150px;background: #351a84;font-size: 30px;" disabled="disabled">
+                        图表显示
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="am-g">
+            <div class="am-u-lg-12">
+                <div class="am-input-group">
+                    <span class="am-input-group-label"><i class="am-icon-comment am-icon-fw"></i></span>
+                    <input type="text" class="am-form-field" placeholder="请注意查收手机短信">
+                    <span class="am-input-group-btn">
+                        <button class="am-btn am-btn-default" type="button">获取验证码</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="am-g">
+    <h5 style="  border-left: solid 5px #0D8083;padding-left: 1rem;color: #5f5f5f;">所在地以地区（市）、时间周期为每年的病例数计算，计算单药、多药耐药率、耐药趋势。</h5>
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+        <button type="button" class="am-btn am-btn-primary am-round" style="width: 150px;height: 150px;background: #351a84;font-size: 30px;" disabled="disabled">
+            图表显示
+        </button>
+        <hr>
+    </div>
+</div>
+
+
+<div class="am-g">
+    <h3 style="  border-left: solid 5px #0D8083;padding-left: 1rem;color: #0D8083;">附件同行HP治疗根除率情况</h3>
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+            <h4>
+                “附近”的定义为所在地以地区（市）为单位，
+                显示个体化根除方案和经验治疗的根除率（含病例数）。</h4>
+
+            <br/>
+        <hr>
+    </div>
+</div>
+
+<div class="am-g">
+    <h3 style="  border-left: solid 5px #0D8083;padding-left: 1rem;color: #0D8083;">
+        我已进行XXliHP根除治疗的研究病例，
+        其中XXli已完成全部研究内容。</h3>
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+            <p>我参与管理研究的病例总根除率为XX%。
+                其中个体化三联方案根除率为XX，个体化四联方案根除率为XX%
+                经验三联方案根除率为XX%，经验四联方案根除率为XX%，其它根除方案根除率为XX%。</p>
+            <br/>
+            图表显示
+            <br/>
+        <hr>
+    </div>
+</div>
+<div class="am-g">
+    <h3 style="  border-left: solid 5px #0D8083;padding-left: 1rem;color: #0D8083;">研究病例数据查询</h3>
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+            所有 未完成 姓名 查询
+            <br />
+            研究编号  姓名  状态(已完成/已检查未治疗/已治疗未随访)
+            <br />
+            （已完成/已检查未治疗/已治疗未随访）
+            数据导出
+    </div>
+</div>
+</body>
+</html>
