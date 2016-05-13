@@ -146,12 +146,95 @@
 
 <div class="am-g am-g-fixed am-margin-top">
     <h5 class="am-am-g-myStudy-h5">研究病例数据查询</h5>
-    <div class="am-u-sm-12">
-        <p>所有 未完成 姓名 查询</p>
-        <p>研究编号  姓名  状态(已完成/已检查未治疗/已治疗未随访)</p>
-        <p>（已完成/已检查未治疗/已治疗未随访）</p>
-        <p>数据导出</p>
+    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+        <form method="post" class="am-form am-form-horizontal">
+            <fieldset>
+                <div class="am-form-group">
+                    <div class="am-u-sm-8">
+                        <label class="am-radio-inline">
+                            <input type="radio" value="" name="docInlineRadio"> 所有
+                        </label>
+                        <label class="am-radio-inline">
+                            <input type="radio" name="docInlineRadio"> 未完成
+                        </label>
+                        <label class="am-radio-inline">
+                            <input type="radio" name="docInlineRadio"> 已完成
+                        </label>
 
+                    </div>
+
+                    <div class="am-u-sm-2">
+                        <button type="button" class="am-btn am-btn-default am-radius">查询</button>
+
+                    </div>
+                    <div class="am-u-sm-2">
+
+                    </div>
+                </div>
+
+                <div class="am-u-sm-12">
+                    <p>所有 未完成 姓名 查询</p>
+
+                    <table class="am-table">
+                        <thead>
+                        <tr>
+                            <th>研究编号</th>
+                            <th>姓名</th>
+                            <th>状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>已完成</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>已检查未治疗</td>
+
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>已治疗未随访</td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+
+                <div class="am-form-group">
+
+
+                    <div class="am-u-sm-2">
+                        <button type="button" class="am-btn am-btn-default am-radius">数据导出</button>
+
+                    </div>
+                    <div class="am-u-sm-8">
+                        <label class="am-radio-inline">
+                            <input type="radio" value="" name="docInlineRadio"> 所有
+                        </label>
+                        <label class="am-radio-inline">
+                            <input type="radio" name="docInlineRadio"> 未完成
+                        </label>
+                        <label class="am-radio-inline">
+                            <input type="radio" name="docInlineRadio"> 已完成
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+        </form>
     </div>
 </div>
 <!-- 以上页面内容 开发时删除 -->
