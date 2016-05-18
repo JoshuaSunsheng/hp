@@ -58,6 +58,11 @@
         .am-header-li-a-no-active{
             color: #c4dad8;
         }
+
+
+        .am-form input[type=number], .am-form input[type=search], .am-form input[type=text], .am-form input[type=password], .am-form input[type=datetime], .am-form input[type=datetime-local], .am-form input[type=date], .am-form input[type=month], .am-form input[type=time], .am-form input[type=week], .am-form input[type=email], .am-form input[type=url], .am-form input[type=tel], .am-form input[type=color], .am-form select, .am-form textarea, .am-form-field{
+            font-size:1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -67,7 +72,7 @@
     <div class="am-g">
         <div class="am-u-sm-12">
 
-            <ol class="am-breadcrumb" style="margin: 0;   font-size: 1.38em;  font-weight: 600;">
+            <ol class="am-breadcrumb" style="margin: 0;   font-size: 1.08em;  font-weight: 600;">
                 <li><a href="myStudy.html" class="am-header-li-a-no-active">我的研究</a></li>
                 <li><a href="myPatient.html" class="am-header-li-a-no-active">我的患者</a></li>
                 <li><a href="dataImport.html" class="am-header-li-a-active">数据录入</a></li>
@@ -83,7 +88,7 @@
 </header>
 
 
-<div class="am-g am-g-fixed am-margin-top">
+<div class="am-g am-g-fixed am-margin-top" style="    font-size: 1.5rem;">
     <h1 style="  border-left: solid 5px #0D8083;padding-left: 1rem;color: #0D8083;">基本信息</h1>
     <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
         <form method="post" class="am-form am-form-horizontal">
@@ -193,7 +198,7 @@
         <form method="post" class="am-form am-form-horizontal">
             <fieldset>
 
-                <div class="am-form-group">
+                <div class="am-form-group" >
                     <label class="am-u-sm-12 am-form-label">患者HP根除治疗医院:</label>
                     <div class="am-u-sm-12">
                         <label class="am-radio-inline">
@@ -209,8 +214,8 @@
                 </div>
 
                 <div class="am-form-group">
-                    <label class="am-u-sm-2 am-form-label">疗程:</label>
-                    <div class="am-u-sm-10">
+                    <label class="am-u-sm-3 am-form-label">疗程:</label>
+                    <div class="am-u-sm-9">
                         <label class="am-radio-inline">
                             <input type="radio" value="" name="docInlineRadio"> 7天
                         </label>
@@ -224,10 +229,10 @@
                 </div>
 
 
-                <div class="am-form-group">
+                <div class="am-form-group" style="font-size: 1.4rem;">
                     <label for="doc-select-1" class="am-u-sm-12 am-form-label">三联：</label>
                     <div class="am-u-sm-5">
-                        <select id="doc-select-1">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
                             <option value="option1">1)抗生素A</option>
                             <option value="option2">2)抗生素B</option>
                             <option value="option3">3)PPI</option>
@@ -236,10 +241,10 @@
                     </div>
                     <div class="am-u-sm-3">
 
-                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量">
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量" style="font-size: 1.4rem;">
                     </div>
                     <div class="am-u-sm-4">
-                        <select id="doc-select-1">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
                             <option value="option1">1)进口</option>
                             <option value="option2">2)国产</option>
                         </select>
@@ -252,7 +257,7 @@
                 <div class="am-form-group">
                     <label for="doc-select-1" class="am-u-sm-12 am-form-label">四联:</label>
                     <div class="am-u-sm-5">
-                        <select id="doc-select-1">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
                             <option value="option1">1)抗生素C</option>
                             <option value="option2">2)抗生素D</option>
                             <option value="option3">3)PPI</option>
@@ -265,7 +270,7 @@
                         <input type="text" class="" id="doc-ipt-other-1" placeholder="用量">
                     </div>
                     <div class="am-u-sm-4">
-                        <select id="doc-select-1">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
                             <option value="option1">1)进口</option>
                             <option value="option2">2)国产</option>
                         </select>
@@ -279,7 +284,7 @@
                 <div class="am-form-group">
                     <label for="doc-select-1" class="am-u-sm-12 am-form-label">其它:</label>
                     <div class="am-u-sm-5">
-                        <select id="doc-select-1">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
                             <option value="option1">1)其它A</option>
                             <option value="option2">2)其它B</option>
                             <option value="option3">3)其它C</option>
@@ -292,13 +297,16 @@
                         <input type="text" class="" id="doc-ipt-other-1" placeholder="用量">
                     </div>
                     <div class="am-u-sm-4">
-                        <select id="doc-select-1">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
                             <option value="option1">1)进口</option>
                             <option value="option2">2)国产</option>
                         </select>
                         <span class="am-form-caret"></span>
                     </div>
-                    如果无药敏数据录入，系统自动判别为经验治疗方案，并给予提示。
+                    <div class="am-u-sm-12">
+                        如果无药敏数据录入，系统自动判别为经验治疗方案，并给予提示。
+
+                    </div>
 
                 </div>
 
@@ -315,8 +323,8 @@
             <fieldset>
 
                 <div class="am-form-group">
-                    <label class="am-u-sm-4 am-form-label">HP呼气实验:</label>
-                    <div class="am-u-sm-8">
+                    <label class="am-u-sm-12 am-form-label">HP呼气实验:</label>
+                    <div class="am-u-sm-12">
                         <label class="am-radio-inline">
                             <input type="radio" value="" name="docInlineRadio"> 13C
                         </label>
@@ -464,8 +472,8 @@
         <form method="post" class="am-form am-form-horizontal">
             <fieldset>
                 <div class="am-form-group">
-                    <label class="am-u-sm-3 am-form-label">第一次:</label>
-                    <div class="am-u-sm-9">
+                    <label class="am-u-sm-12 am-form-label">第一次:</label>
+                    <div class="am-u-sm-12">
                         <label class="am-radio-inline">
                             <input type="radio" value="" name="docInlineRadio"> 13C
                         </label>
@@ -481,15 +489,17 @@
                     </div>
                 </div>
 
+
+
                 <div class="am-form-group">
-                    <label for="doc-ipt-birthday-1" class="am-u-sm-5 am-form-label">呼吸实验诊断时间:</label>
-                    <div class="am-u-sm-3">
+                    <label for="doc-ipt-birthday-1" class="am-u-sm-12 am-form-label">呼吸实验诊断时间:</label>
+                    <div class="am-u-sm-4">
                         <input type="text" class="" id="doc-ipt-birthday-1" maxlength="4" placeholder="年">
                     </div>
-                    <div class="am-u-sm-2">
+                    <div class="am-u-sm-3">
                         <input type="text" class="" id="doc-ipt-birthday-2" maxlength="2" placeholder="月">
                     </div>
-                    <div class="am-u-sm-2">
+                    <div class="am-u-sm-3">
                         <input type="text" class="" id="doc-ipt-birthday-3" maxlength="2" placeholder="日">
                     </div>
                     <div class="am-u-sm-2">
@@ -500,8 +510,8 @@
                 </div>
 
                 <div class="am-form-group">
-                    <label class="am-u-sm-3 am-form-label">第二次:</label>
-                    <div class="am-u-sm-9">
+                    <label class="am-u-sm-12 am-form-label">第二次:</label>
+                    <div class="am-u-sm-12">
                         <label class="am-radio-inline">
                             <input type="radio" value="" name="docInlineRadio"> 13C
                         </label>
@@ -518,14 +528,14 @@
                 </div>
 
                 <div class="am-form-group">
-                    <label for="doc-ipt-birthday-1" class="am-u-sm-3 am-form-label">呼吸实验诊断时间:</label>
-                    <div class="am-u-sm-3">
+                    <label for="doc-ipt-birthday-1" class="am-u-sm-12 am-form-label">呼吸实验诊断时间:</label>
+                    <div class="am-u-sm-4">
                         <input type="text" class="" id="doc-ipt-birthday-1" maxlength="4" placeholder="年">
                     </div>
-                    <div class="am-u-sm-2">
+                    <div class="am-u-sm-3">
                         <input type="text" class="" id="doc-ipt-birthday-2" maxlength="2" placeholder="月">
                     </div>
-                    <div class="am-u-sm-2">
+                    <div class="am-u-sm-3">
                         <input type="text" class="" id="doc-ipt-birthday-3" maxlength="2" placeholder="日">
                     </div>
                     <div class="am-u-sm-2">
