@@ -48,62 +48,73 @@
 
     </style>
 </head>
-<body>
-<div class="header">
-    <div class="am-g">
-        <h1>HP</h1>
-        <!--<p>Integrated Development Environment<br/>代码编辑，代码生成，界面设计，调试，编译</p>-->
+<body style="">
+<div style="margin: 0;">
+    <div class="header">
+        <br />
+        <br />
+        <div class="am-g">
+            <h1>HP众包研究</h1>
+            <!--<p>Integrated Development Environment<br/>代码编辑，代码生成，界面设计，调试，编译</p>-->
+        </div>
+        <hr>
     </div>
-    <hr/>
-</div>
-<div class="am-g">
-    <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-        <h3>登录</h3>
-        <hr>
-        <br>
+    <div class="am-g">
+        <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+            <h3 style="
+        text-align: center;
+        font-size: 1.5em;">登录</h3>
 
-        <form method="post" class="am-form">
-            <div class="am-g">
-                <div class="am-u-lg-12">
-                    <div class="am-input-group">
-                        <span class="am-input-group-label"><i class="am-icon-phone am-icon-fw"></i></span>
-                        <input type="text" class="am-form-field" placeholder="手机号">
+
+            <form method="post" class="am-form">
+                <div class="am-g">
+                    <div class="am-u-lg-12">
+                        <div class="am-input-group">
+                            <span class="am-input-group-label"><i class="am-icon-phone am-icon-fw"></i></span>
+                            <input type="text" class="am-form-field" placeholder="手机号">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <br/>
+                <br>
 
-            <div class="am-g">
-                <div class="am-u-lg-12">
-                    <div class="am-input-group">
-                        <span class="am-input-group-label"><i class="am-icon-comment am-icon-fw"></i></span>
-                        <input type="text" class="am-form-field" placeholder="请注意查收手机短信">
-            <span class="am-input-group-btn">
-              <button class="am-btn am-btn-default" type="button">获取验证码</button>
-            </span>
+                <div class="am-g">
+                    <div class="am-u-lg-12">
+                        <div class="am-input-group">
+                            <span class="am-input-group-label"><i class="am-icon-comment am-icon-fw"></i></span>
+                            <input type="text" class="am-form-field" placeholder="请注意查收手机短信">
+                <span class="am-input-group-btn">
+                  <button class="am-btn am-btn-default" type="button">获取验证码</button>
+                </span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <br/>
-            <div class="am-cf">
-                <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl" onclick="login();return false;">
-                <input type="submit" name="" value="忘记密码 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr">
-            </div>
-        </form>
-        <hr>
+                <br>
+                <div class="am-g">
+                    <div class="am-u-sm-6 am-u-sm-centered"><input type="submit" name="" value="登 录"
+                                                                   class="am-btn am-btn-primary am-fl"
+                                                                   onclick="login();return false;" style="
+                                                                   width: 100%;;
+    ">
+                    </div>
+                </div>
+
+            </form>
+            <hr>
+        </div>
     </div>
 </div>
 
 <script>
 
-    function login(){
+    function login() {
         window.location.href = "agreement.html";
     }
 
 
-
 </script>
+
+
 </body>
 </html>

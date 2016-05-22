@@ -34,7 +34,7 @@
 
         .header .am-g{
             height: 50px;line-height: 50px;
-            background-color: #186A6B;
+                background-color: #0e90d2;
             color: #FFFFFF;
             font-size: 1.8rem;
         }
@@ -59,10 +59,11 @@
         }
 
         .am-checkbox input[type=checkbox], .am-checkbox-inline input[type=checkbox], .am-radio input[type=radio], .am-radio-inline input[type=radio] {
-            /*float: left;*/
+            /* float: left; */
             margin-left: -20px;
             outline: 0;
             clear: both;
+            border-radius: 2000px;
         }
 
         input[type=checkbox], input[type=radio] {
@@ -178,8 +179,13 @@
                 </div>
                 <hr>
                 <hr>
-                <div class="am-cf">
-                    <input type="submit" name="" value="下一步" class="am-btn am-btn-primary am-btn-sm am-fl" onclick="agreement();return false;">
+
+                <div class="am-g">
+                    <div class="am-u-sm-6 am-u-sm-centered">
+                        <input type="submit" name="" value="下一步" class="am-btn am-btn-primary am-btn-sm am-fl" onclick="agreement();return false;"
+                               style="width: 100%;">
+
+                    </div>
                 </div>
 
             </fieldset>
