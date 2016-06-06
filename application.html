@@ -101,7 +101,7 @@
                 <div class="am-form-group">
                     <label for="doc-ipt-birthday-1" class="am-u-sm-4 am-form-label">出生日期:</label>
                     <div class="am-u-sm-8">
-                        <input type="text" class="" id="doc-ipt-name-1" placeholder="1990-01-10">
+                        <input id="datetimepicker5" type="text" class="am-form-field" placeholder="yyyy-mm-dd" data-am-datepicker required />
                     </div>
 
                 </div>
@@ -302,13 +302,27 @@
 
                 <div class="am-form-group">
                     <label for="doc-ta-1" class="am-u-sm-12 am-form-label">若有, 所用药物有:</label>
-                    <div class="am-u-sm-12">
-                        <textarea class="" rows="5" id="doc-ta-1"></textarea>
+                    <div class="am-u-sm-6">
+                        <select id="doc-select-1">
+                            <option value="option1">克拉霉素</option>
+                            <option value="option2">左氧氟沙星</option>
+                            <option value="option3">甲硝唑</option>
+                            <option value="option3">阿莫西林</option>
+                            <option value="option3">呋喃唑酮</option>
+                            <option value="option3">四环素</option>
+                            <option value="option3">奥美拉唑</option>
+                            <option value="option3">埃索美拉唑</option>
+                            <option value="option3">雷贝拉唑</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-6">
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="其它药物">
                     </div>
                 </div>
 
                 <div class="am-form-group">
-                    <label class="am-u-sm-12 am-form-label">近2年来服用过消炎止痛药吗?</label>
+                    <label class="am-u-sm-12 am-form-label">近2周来服用过消炎止痛药吗?</label>
                     <div class="am-u-sm-12">
                         <label class="am-radio-inline">
                             <input type="radio" value="" name="docInlineRadio"> 无
@@ -387,6 +401,25 @@
 
 
     }
+</script>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/amazeui.datetimepicker.js"></script>
+
+<script>
+    $('#datetimepicker')
+            .datetimepicker()
+            .on('changeDate', function(ev){
+                alert(ev.date)
+            });
 </script>
 </body>
 </html>
