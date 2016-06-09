@@ -207,15 +207,17 @@
         <form method="post" class="am-form am-form-horizontal">
             <fieldset>
 
+
                 <div class="am-form-group">
                     <label class="am-u-sm-12 am-form-label">HP呼气实验:</label>
-                    <div class="am-u-sm-12">
-                        <label class="am-radio-inline">
-                            <input type="radio" value="" name="docInlineRadio"> 13C
-                        </label>
-                        <label class="am-radio-inline">
-                            <input type="radio" name="docInlineRadio"> 14C
-                        </label>
+                    <div class="am-u-sm-4">
+                        <select id="doc-select-1">
+                            <option value="option1">13C</option>
+                            <option value="option2">14C</option>
+                       </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-8">
                         <label class="am-radio-inline">
                             <input type="radio" name="docInlineRadio"> 阴性
                         </label>
@@ -360,13 +362,13 @@
                     <label class="am-u-sm-12 am-form-label">患者HP根除治疗医院:</label>
                     <div class="am-u-sm-12">
                         <label class="am-radio-inline">
-                            <input type="radio" value="" name="docInlineRadio"> 三联
+                            <input type="radio" value="" name="docInlineRadio" id="sanlian"> 三联
                         </label>
                         <label class="am-radio-inline">
-                            <input type="radio" name="docInlineRadio"> 四联
+                            <input type="radio" name="docInlineRadio" id="silian"> 四联
                         </label>
                         <label class="am-radio-inline">
-                            <input type="radio" name="docInlineRadio"> 其它
+                            <input type="radio" name="docInlineRadio" id="otherlian"> 其它
                         </label>
                     </div>
                 </div>
@@ -387,13 +389,21 @@
                 </div>
 
 
-                <div class="am-form-group" style="font-size: 1.4rem;">
+                <div class="am-form-group sanlian" style="font-size: 1.4rem; display: none">
                     <label for="doc-select-1" class="am-u-sm-12 am-form-label">三联：</label>
                     <div class="am-u-sm-5">
                         <select id="doc-select-1" style="font-size: 1.4rem;">
-                            <option value="option1">1)抗生素A</option>
-                            <option value="option2">2)抗生素B</option>
-                            <option value="option3">3)PPI</option>
+                            <option value="option1">抗生素</option>
+                            <option value="option1">克拉霉素</option>
+                            <option value="option1">左氧氟沙星</option>
+                            <option value="option1">阿莫西林</option>
+                            <option value="option1">呋喃唑酮</option>
+                            <option value="option1">四环素</option>
+                            <option value="option1">甲硝唑</option>
+                            <option value="option1">阿奇霉素</option>
+                            <option value="option1">莫西沙星</option>
+                            <option value="option1">利福平</option>
+                            <option value="option1">其他</option>
                         </select>
                         <span class="am-form-caret"></span>
                     </div>
@@ -407,18 +417,73 @@
                         </select>
                         <span class="am-form-caret"></span>
                     </div>
-                    用药选择时，如使用耐药抗生素，给予提示。
 
+                    <div class="am-u-sm-5">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">抗生素</option>
+                            <option value="option1">克拉霉素</option>
+                            <option value="option1">左氧氟沙星</option>
+                            <option value="option1">阿莫西林</option>
+                            <option value="option1">呋喃唑酮</option>
+                            <option value="option1">四环素</option>
+                            <option value="option1">甲硝唑</option>
+                            <option value="option1">阿奇霉素</option>
+                            <option value="option1">莫西沙星</option>
+                            <option value="option1">利福平</option>
+                            <option value="option1">其他</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-3">
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量" style="font-size: 1.4rem;">
+                    </div>
+                    <div class="am-u-sm-4">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">1)进口</option>
+                            <option value="option2">2)国产</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+
+                    <div class="am-u-sm-5">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">PPI</option>
+                            <option value="option1">奥美拉唑</option>
+                            <option value="option1">埃索美拉唑</option>
+                            <option value="option1">雷贝拉唑</option>
+                            <option value="option1">兰索拉唑</option>
+                            <option value="option1">泮托拉唑</option>
+                            <option value="option1">其他</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-3">
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量" style="font-size: 1.4rem;">
+                    </div>
+                    <div class="am-u-sm-4">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">1)进口</option>
+                            <option value="option2">2)国产</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
                 </div>
 
-                <div class="am-form-group">
+                <div class="am-form-group silian" style="display: none">
                     <label for="doc-select-1" class="am-u-sm-12 am-form-label">四联:</label>
                     <div class="am-u-sm-5">
                         <select id="doc-select-1" style="font-size: 1.4rem;">
-                            <option value="option1">1)抗生素C</option>
-                            <option value="option2">2)抗生素D</option>
-                            <option value="option3">3)PPI</option>
-                            <option value="option3">4)铋剂</option>
+                            <option value="option1">抗生素</option>
+                            <option value="option1">克拉霉素</option>
+                            <option value="option1">左氧氟沙星</option>
+                            <option value="option1">阿莫西林</option>
+                            <option value="option1">呋喃唑酮</option>
+                            <option value="option1">四环素</option>
+                            <option value="option1">甲硝唑</option>
+                            <option value="option1">阿奇霉素</option>
+                            <option value="option1">莫西沙星</option>
+                            <option value="option1">利福平</option>
+                            <option value="option1">其他</option>
                         </select>
                         <span class="am-form-caret"></span>
                     </div>
@@ -433,12 +498,84 @@
                         </select>
                         <span class="am-form-caret"></span>
                     </div>
-                    用药选择时，如使用耐药抗生素，给予提示。
 
+                    <div class="am-u-sm-5">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">抗生素</option>
+                            <option value="option1">克拉霉素</option>
+                            <option value="option1">左氧氟沙星</option>
+                            <option value="option1">阿莫西林</option>
+                            <option value="option1">呋喃唑酮</option>
+                            <option value="option1">四环素</option>
+                            <option value="option1">甲硝唑</option>
+                            <option value="option1">阿奇霉素</option>
+                            <option value="option1">莫西沙星</option>
+                            <option value="option1">利福平</option>
+                            <option value="option1">其他</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-3">
+
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量">
+                    </div>
+                    <div class="am-u-sm-4">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">1)进口</option>
+                            <option value="option2">2)国产</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+
+                    <div class="am-u-sm-5">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">PPI</option>
+                            <option value="option1">奥美拉唑</option>
+                            <option value="option1">埃索美拉唑</option>
+                            <option value="option1">雷贝拉唑</option>
+                            <option value="option1">兰索拉唑</option>
+                            <option value="option1">泮托拉唑</option>
+                            <option value="option1">其他</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-3">
+
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量">
+                    </div>
+                    <div class="am-u-sm-4">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">1)进口</option>
+                            <option value="option2">2)国产</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+
+                    <div class="am-u-sm-5">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">铋剂</option>
+                            <option value="option1">枸橼酸铋钾</option>
+                            <option value="option1">胶体果胶铋</option>
+                            <option value="option1">胶体次枸橼酸铋</option>
+                            <option value="option1">其他</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
+                    <div class="am-u-sm-3">
+
+                        <input type="text" class="" id="doc-ipt-other-1" placeholder="用量">
+                    </div>
+                    <div class="am-u-sm-4">
+                        <select id="doc-select-1" style="font-size: 1.4rem;">
+                            <option value="option1">1)进口</option>
+                            <option value="option2">2)国产</option>
+                        </select>
+                        <span class="am-form-caret"></span>
+                    </div>
                 </div>
 
 
-                <div class="am-form-group">
+                <div class="am-form-group otherlian" style="display: none">
                     <label for="doc-select-1" class="am-u-sm-12 am-form-label">其它:</label>
                     <div class="am-u-sm-5">
                         <select id="doc-select-1" style="font-size: 1.4rem;">
@@ -602,6 +739,26 @@
             .on('changeDate', function(ev){
                 alert(ev.date)
             });
+
+    $('#sanlian').click(function(){
+        $('.sanlian').css('display', '');
+        $('.silian').css('display', 'none');
+        $('.otherlian').css('display', 'none');
+    })
+
+    $('#silian').click(function(){
+        $('.sanlian').css('display', 'none');
+        $('.silian').css('display', '');
+        $('.otherlian').css('display', 'none');
+
+    })
+
+    $('#otherlian').click(function(){
+        $('.sanlian').css('display', 'none');
+        $('.silian').css('display', 'none');
+        $('.otherlian').css('display', '');
+    })
+
 </script>
 </body>
 </html>
