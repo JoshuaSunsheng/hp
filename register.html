@@ -223,7 +223,7 @@
                     <div class="am-g">
                         <div class="am-u-sm-6 am-u-sm-centered">
                             <input type="submit" name="" value="申请审核" class="am-btn am-btn-primary am-btn-sm am-fl"
-                                   onclick="register()"
+                                   onclick="register(); return false;"
                                    style="width: 100%;">
 
                         </div>
@@ -246,7 +246,7 @@
 <script>
 
     function register() {
-        alert("您的申请已经提交审核,请耐心等待!")
+        alert("您的申请已经提交审核,请耐心等待!");
 
         window.location.href = "myPatient.html";
     }
